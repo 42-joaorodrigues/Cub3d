@@ -23,7 +23,8 @@ SRC_INPUT		= src/input/input.c \
 				  src/input/flood_fill.c
 SRC_GRAPHIC		= src/graphic/raycast.c \
 				  src/graphic/raycast_utils.c \
-				  src/graphic/draw.c
+				  src/graphic/draw.c \
+				  src/graphic/minimap_bonus.c
 SRC_KEYHOOK		= src/keyhook/keyhook.c \
 				  src/keyhook/keyhook_rotate.c \
 				  src/keyhook/keyhook_walk_bonus.c

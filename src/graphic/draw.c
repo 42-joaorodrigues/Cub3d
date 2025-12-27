@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   draw.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fsilva-p <fsilva-p@student.42.fr>          +#+  +:+       +#+        */
+/*   By: joao-alm <joao-alm@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/16 20:20:45 by joao-alm          #+#    #+#             */
-/*   Updated: 2025/06/18 14:26:58 by fsilva-p         ###   ########.fr       */
+/*   Updated: 2025/12/27 18:33:05 by joao-alm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "graphic.h"
+#include "minimap_bonus.h"
 #include "mlx.h"
 
 void	ft_draw(t_game *game)
@@ -20,6 +21,7 @@ void	ft_draw(t_game *game)
 			&game->ray.line_len, &game->ray.endian);
 	draw_clf(game);
 	raycasting(game);
+	draw_minimap(game);
 	mlx_put_image_to_window(game->mlx, game->win.win, game->ray.img, 0, 0);
 	mlx_destroy_image(game->mlx, game->ray.img);
 }

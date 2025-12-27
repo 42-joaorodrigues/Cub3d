@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   keyhook_walk.c                                     :+:      :+:    :+:   */
+/*   keyhook_walk_bonus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fsilva-p <fsilva-p@student.42.fr>          +#+  +:+       +#+        */
+/*   By: joao-alm <joao-alm@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/18 13:53:30 by fsilva-p          #+#    #+#             */
-/*   Updated: 2025/06/18 14:09:21 by fsilva-p         ###   ########.fr       */
+/*   Updated: 2025/12/27 18:47:51 by joao-alm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 static void	move_player(t_game *game, double dx, double dy)
 {
 	t_vector	new;
-	t_vector	try;
 	double		margin;
 
 	new.y = game->player.pos.y;
@@ -23,17 +22,22 @@ static void	move_player(t_game *game, double dx, double dy)
 	margin = 0.2;
 	if (dx != 0)
 	{
-		try.x = new.x + dx * MOVE_SPEED;
-		if (game->map.matrix[(int)new.y][(int)(try.x + margin)] != '1'
-			&& game->map.matrix[(int)new.y][(int)(try.x - margin)] != '1')
-			game->player.pos.x = try.x;
+		new.x = game->player.pos.x + dx * MOVE_SPEED;
+		if (game->map.matrix[(int)(new.y + margin)][(int)(new.x + margin)] != '1'
+			&& game->map.matrix[(int)(new.y + margin)][(int)(new.x - margin)] != '1'
+			&& game->map.matrix[(int)(new.y - margin)][(int)(new.x + margin)] != '1'
+			&& game->map.matrix[(int)(new.y - margin)][(int)(new.x - margin)] != '1')
+			game->player.pos.x = new.x;
 	}
 	if (dy != 0)
 	{
-		try.y = new.y + dy * MOVE_SPEED;
-		if (game->map.matrix[(int)(try.y + margin)][(int)(new.x)] != '1'
-			&& game->map.matrix[(int)(try.y - margin)][(int)(new.x)] != '1')
-			game->player.pos.y = try.y;
+		new.y = game->player.pos.y + dy * MOVE_SPEED;
+		new.x = game->player.pos.x;
+		if (game->map.matrix[(int)(new.y + margin)][(int)(new.x + margin)] != '1'
+			&& game->map.matrix[(int)(new.y + margin)][(int)(new.x - margin)] != '1'
+			&& game->map.matrix[(int)(new.y - margin)][(int)(new.x + margin)] != '1'
+			&& game->map.matrix[(int)(new.y - margin)][(int)(new.x - margin)] != '1')
+			game->player.pos.y = new.y;
 	}
 }
 

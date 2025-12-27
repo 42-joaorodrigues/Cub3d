@@ -6,21 +6,21 @@
 /*   By: joao-alm <joao-alm@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 15:18:28 by joao-alm          #+#    #+#             */
-/*   Updated: 2025/12/27 17:43:09 by joao-alm         ###   ########.fr       */
+/*   Updated: 2025/12/27 18:48:25 by joao-alm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GAME_H
 # define GAME_H
 
-# define FOV 0.9
-# define TEXTURE_SIZE 512
+#define FOV 0.9
+#define TEXTURE_SIZE 512
 
-# define WIN_HEIGHT 720
-# define WIN_RATIO 1.777777778
+#define WIN_HEIGHT 720
+#define WIN_RATIO 1.777777778
 
-# define ROT_SPEED 0.025
-# define MOVE_SPEED 0.06
+#define ROT_SPEED 0.05
+#define MOVE_SPEED 0.06
 
 # include "vector.h"
 

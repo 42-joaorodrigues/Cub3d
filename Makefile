@@ -48,7 +48,7 @@ $(NAME): $(HEADER) libft mlx $(OBJ)
 #	@make -C mlx --no-print-directory > /dev/null 2>&1
 #	@echo "Mlx compiled successfully"
 	@$(CC) $(CFLAGS) $(OBJ) -o $@ -Llibft -lft -Lmlx -lmlx -lXext -lX11 -lm
-	@echo "MiniRT compiled successfully"
+	@echo "cub3D compiled successfully"
 
 bonus: $(NAME)
 
@@ -59,7 +59,7 @@ clean:
 fclean: libft mlx
 	@rm -rf $(O_DIR)
 	@rm -rf $(NAME)
-	@echo "MiniRT objects & executable removed successfully"
+	@echo "cub3D objects & executable removed successfully"
 	@make -C libft fclean --no-print-directory > /dev/null 2>&1
 	@echo "Libft objects & executable removed successfully"
 #	@make -C mlx clean --no-print-directory > /dev/null 2>&1

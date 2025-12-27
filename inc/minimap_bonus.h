@@ -6,7 +6,7 @@
 /*   By: joao-alm <joao-alm@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/27 18:29:52 by joao-alm          #+#    #+#             */
-/*   Updated: 2025/12/27 18:55:49 by joao-alm         ###   ########.fr       */
+/*   Updated: 2025/12/27 19:05:12 by joao-alm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,9 @@
 #define MINIMAP_MARGIN 20
 #define MINIMAP_WALL_COLOR 0x404040
 #define MINIMAP_FLOOR_COLOR 0xC0C0C0
-#define MINIMAP_PLAYER_COLOR 0xFF0000
-#define MINIMAP_BG_COLOR 0x000000
+#define MINIMAP_PLAYER_COLOR 0xFFFFFF
 
-typedef struct s_game t_game;  // forward declaration
+typedef struct s_game t_game; // forward declaration
 void	draw_minimap(t_game *game);
 
 #endif

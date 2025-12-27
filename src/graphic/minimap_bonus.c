@@ -6,7 +6,7 @@
 /*   By: joao-alm <joao-alm@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/27 00:00:00 by joao-alm          #+#    #+#             */
-/*   Updated: 2025/12/27 18:56:26 by joao-alm         ###   ########.fr       */
+/*   Updated: 2025/12/27 19:01:20 by joao-alm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -122,8 +122,6 @@ void	draw_minimap(t_game *game)
 		{
 			if (is_inside_circle(x, y, center, radius))
 				draw_rotated_tile(game, x, y, rotation);
-			// else
-			// 	put_pixel_minimap(game, x, y, MINIMAP_BG_COLOR);
 			x++;
 		}
 		y++;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   raycast_utils.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fsilva-p <fsilva-p@student.42.fr>          +#+  +:+       +#+        */
+/*   By: joao-alm <joao-alm@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 17:21:17 by fsilva-p          #+#    #+#             */
-/*   Updated: 2025/06/18 14:44:47 by fsilva-p         ###   ########.fr       */
+/*   Updated: 2025/12/27 17:39:21 by joao-alm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,7 @@ void	draw_walls(t_game *game, t_ray *ray, int x)
 	draw_utils(game, ray);
 	get_texture_addr(game, ray, &tex_img);
 	y = ray->draw_start;
-	while (y < ray->draw_end)
+	while (y <= ray->draw_end)
 	{
 		d = y * 256 - game->win.height * 128 + ray->line_height * 128;
 		ray->tex.y = (d * TEXTURE_SIZE) / ray->line_height / 256;

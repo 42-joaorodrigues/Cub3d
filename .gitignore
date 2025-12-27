@@ -2,7 +2,7 @@
 .vscode/
 
 # Build
-cub3d
+cub3D
 obj/
 libft/
 mlx/

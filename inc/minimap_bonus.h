@@ -6,7 +6,7 @@
 /*   By: joao-alm <joao-alm@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/27 18:29:52 by joao-alm          #+#    #+#             */
-/*   Updated: 2025/12/27 18:42:30 by joao-alm         ###   ########.fr       */
+/*   Updated: 2025/12/27 18:55:49 by joao-alm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 # define MINIMAP_BONUS_H
 
 // Settings
-#define MINIMAP_RADIUS 5
-#define MINIMAP_TILE_SIZE 20
+#define MINIMAP_RADIUS 7
+#define MINIMAP_TILE_SIZE 15
 #define MINIMAP_SIZE (MINIMAP_RADIUS * 2 * MINIMAP_TILE_SIZE)
 #define MINIMAP_MARGIN 20
 #define MINIMAP_WALL_COLOR 0x404040

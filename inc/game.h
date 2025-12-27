@@ -6,7 +6,7 @@
 /*   By: joao-alm <joao-alm@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 15:18:28 by joao-alm          #+#    #+#             */
-/*   Updated: 2025/12/27 18:48:25 by joao-alm         ###   ########.fr       */
+/*   Updated: 2025/12/27 18:52:52 by joao-alm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 #define WIN_HEIGHT 720
 #define WIN_RATIO 1.777777778
 
-#define ROT_SPEED 0.05
+#define ROT_SPEED 0.03
 #define MOVE_SPEED 0.06
 
 # include "vector.h"

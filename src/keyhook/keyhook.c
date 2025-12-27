@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   keyhook.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fsilva-p <fsilva-p@student.42.fr>          +#+  +:+       +#+        */
+/*   By: joao-alm <joao-alm@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/25 15:50:38 by fsilva-p          #+#    #+#             */
-/*   Updated: 2025/06/18 14:18:19 by fsilva-p         ###   ########.fr       */
+/*   Updated: 2025/12/27 18:52:28 by joao-alm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,9 @@ int	key_release(int keycode, t_game *game)
 
 int	update(t_game *game)
 {
+	int	rotated;
+
+	rotated = 0;
 	if (game->keys.w)
 		walk_w(KEY_W, game);
 	if (game->keys.a)
@@ -67,10 +70,16 @@ int	update(t_game *game)
 		walk_s(KEY_S, game);
 	if (game->keys.d)
 		walk_d(KEY_D, game);
-	if (game->keys.left)
+	if (game->keys.left && !rotated)
+	{
 		rotate_view(game, ROT_SPEED);
-	if (game->keys.right)
+		rotated = 1;
+	}
+	if (game->keys.right && !rotated)
+	{
 		rotate_view(game, -ROT_SPEED);
+		rotated = 1;
+	}
 	ft_draw(game);
 	return (0);
 }

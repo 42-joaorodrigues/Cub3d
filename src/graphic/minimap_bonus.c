@@ -6,7 +6,7 @@
 /*   By: joao-alm <joao-alm@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/27 00:00:00 by joao-alm          #+#    #+#             */
-/*   Updated: 2025/12/27 18:46:12 by joao-alm         ###   ########.fr       */
+/*   Updated: 2025/12/27 18:56:26 by joao-alm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,7 @@ static void	draw_player_indicator(t_game *game)
 	int	size;
 
 	center = MINIMAP_SIZE / 2;
-	size = MINIMAP_TILE_SIZE / 4;
+	size = MINIMAP_TILE_SIZE / 3;
 	py = -size;
 	while (py <= size)
 	{

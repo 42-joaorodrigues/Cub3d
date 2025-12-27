@@ -3,19 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   graphic.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fsilva-p <fsilva-p@student.42.fr>          +#+  +:+       +#+        */
+/*   By: joao-alm <joao-alm@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/07 20:02:29 by joao-alm          #+#    #+#             */
-/*   Updated: 2025/06/18 14:32:43 by fsilva-p         ###   ########.fr       */
+/*   Updated: 2025/12/27 17:41:55 by joao-alm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GRAPHIC_H
-#define GRAPHIC_H
+# define GRAPHIC_H
 
-#include "game.h"
+# include "game.h"
 
-typedef struct	s_ray {
+typedef struct s_ray
+{
 	int			horizontal_side;
 	int			hit;
 	double		camera_x;
@@ -45,4 +46,4 @@ void			calc_perp_dist(t_ray *ray);
 void			calc_distance(t_ray *ray);
 void			draw_walls(t_game *game, t_ray *ray, int x);
 
-#endif //GRAPHIC_H
+#endif // GRAPHIC_H

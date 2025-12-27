@@ -6,7 +6,7 @@
 /*   By: joao-alm <joao-alm@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/05 18:51:17 by joao-alm          #+#    #+#             */
-/*   Updated: 2025/12/27 17:21:20 by joao-alm         ###   ########.fr       */
+/*   Updated: 2025/12/27 17:43:24 by joao-alm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,8 @@ int	ft_get_colour(char *line, char *txt_name, int *colour)
 	if (!ft_strncmp(line, txt_name, 2))
 	{
 		if (*colour != -1)
-			return (put_error("A colour is given more than once", E_DUP_COLOUR));
+			return (put_error("A colour is given more than once",
+					E_DUP_COLOUR));
 		trimmed = ft_strtrim(line + 2, "\n");
 		if (!trimmed)
 			return (put_error("Memory allocation failed", E_NOMEM));

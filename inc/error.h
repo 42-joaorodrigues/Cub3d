@@ -6,16 +6,17 @@
 /*   By: joao-alm <joao-alm@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/04 16:06:52 by joao-alm          #+#    #+#             */
-/*   Updated: 2025/12/27 17:18:38 by joao-alm         ###   ########.fr       */
+/*   Updated: 2025/12/27 17:41:49 by joao-alm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ERROR_H
-#define ERROR_H
+# define ERROR_H
 
-#include "lft_error.h"
+# include "lft_error.h"
 
-enum e_error {
+enum	e_error
+{
 	E_ARGS = 1,
 	E_PATH_EMPTY,
 	E_PATH_EXT,
@@ -33,4 +34,4 @@ enum e_error {
 	E_MLX_XPM
 };
 
-#endif //ERROR_H
+#endif // ERROR_H

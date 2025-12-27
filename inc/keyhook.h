@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   keyhook.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joao-alm <joao-alm@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: joao-alm <joao-alm@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 14:40:36 by joao-alm          #+#    #+#             */
-/*   Updated: 2025/06/13 06:19:16 by joao-alm         ###   ########.fr       */
+/*   Updated: 2025/12/27 17:42:01 by joao-alm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef KEYHOOK_H
-#define KEYHOOK_H
+# define KEYHOOK_H
 
-#include "game.h"
+# include "game.h"
 
 # define KEY_W 119
 # define KEY_A 97
@@ -34,4 +34,4 @@ void	walk_d(int keycode, t_game *game);
 // Rotate
 void	rotate_view(t_game *game, double angle);
 
-#endif //KEYHOOK_H
+#endif // KEYHOOK_H

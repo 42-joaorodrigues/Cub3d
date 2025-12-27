@@ -1,0 +1,8 @@
+# IDE
+.vscode/
+
+# Build
+cub3D
+obj/
+libft/
+mlx/

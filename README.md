@@ -158,7 +158,7 @@ make re
 ## Dependencies
 
 - **miniLibX** - Graphics library for window management and pixel manipulation
-- **JAL Library** - Custom utility library for memory management and string operations
+- **LFT Library** - Custom utility library for memory management and string operations
 - **Math Library** - Standard math functions for trigonometric calculations
 - **X11** - Linux window system support
 
@@ -178,7 +178,7 @@ cub3d/
 │   ├── graphic/         # Ray-casting engine
 │   └── keyhook/         # Input handling
 ├── lib/                 # External libraries
-│   ├── jal/             # Custom utility library
+│   ├── lft/             # Custom utility library
 │   └── mlx/             # miniLibX graphics library
 ├── asset/               # Texture files (.xpm)
 └── map/                 # Test maps

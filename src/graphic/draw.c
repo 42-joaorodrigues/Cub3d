@@ -12,6 +12,8 @@
 
 #include "graphic.h"
 #include "mlx.h"
+#include "game.h"
+#include "weapon_bonus.h"
 
 void	ft_draw(t_game *game)
 {
@@ -20,6 +22,7 @@ void	ft_draw(t_game *game)
 			&game->ray.line_len, &game->ray.endian);
 	draw_clf(game);
 	raycasting(game);
+	draw_gun(game);
 	mlx_put_image_to_window(game->mlx, game->win.win, game->ray.img, 0, 0);
 	mlx_destroy_image(game->mlx, game->ray.img);
 }

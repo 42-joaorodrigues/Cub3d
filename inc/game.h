@@ -23,6 +23,7 @@
 # define MOVE_SPEED 0.06
 
 # include "vector.h"
+# include "weapon_bonus.h"
 
 typedef struct s_map
 {
@@ -79,6 +80,7 @@ typedef struct s_game
 	t_win		win;
 	t_img		ray;
 	t_keys		keys;
+	t_gun		gun;
 }				t_game;
 
 // Init

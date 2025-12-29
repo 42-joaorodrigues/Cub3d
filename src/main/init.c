@@ -15,6 +15,7 @@
 #include "lft_error.h"
 #include "mlx.h"
 #include <stddef.h>
+#include "weapon_bonus.h"
 
 int	ft_init(t_game *game)
 {
@@ -37,5 +38,6 @@ int	ft_init(t_game *game)
 	if (!game->mlx)
 		return (put_error("Mlx failed to initialize", E_MLX_INIT));
 	game->win.win = NULL;
+	load_gun(game);
 	return (0);
 }
